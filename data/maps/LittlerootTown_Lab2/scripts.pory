@@ -1,0 +1,28 @@
+mapscripts LittlerootTown_Lab2_MapScripts{}
+
+script LittlerootTown_Lab2_Darkrai
+{
+    lockall
+    showmonpic(SPECIES_SQUIRTLE, 7, 4)
+    msgbox("Do you want Squirtle?", MSGBOX_YESNO)
+
+    if(var(VAR_RESULT) == YES)
+    {
+        playfanfare(MUS_OBTAIN_ITEM)
+        givemon(SPECIES_SQUIRTLE, 50)
+        msgbox("You Received Squirtle")
+        waitfanfare
+        removeobject(1)
+        setflag(FLAG_UNUSED_0x020)
+        setflag(FLAG_SYS_POKEMON_GET)
+    }
+
+    else
+    {
+        msgbox("You didn't pick yes")
+    }
+
+    hidemonpic
+    releaseall
+    end 
+}
