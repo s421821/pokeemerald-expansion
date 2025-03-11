@@ -4925,3 +4925,17 @@ $(OBJEVENTGFXDIR)/misc/ball_%.4bpp: $(OBJEVENTGFXDIR)/misc/ball_%.png ; $(GFX) $
 
 graphics/door_anims/battle_tower_multi_corridor.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+# Added OW Sprites
+
+#pokemon
+
+#arcanine
+$(OBJEVENTGFXDIR)/people/arcanine.4bpp: %.4bpp: %.png # Pretty sure Arcanine is 32x32 making it 4x4 tiles (may need to change)
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+#people
+
+#rocket grunt
+$(OBJEVENTGFXDIR)/people/rocket_grunt.4bpp: %.4bpp: %.png 
+	$(GFX) $< $@ -mwidth 4 -mheight 4

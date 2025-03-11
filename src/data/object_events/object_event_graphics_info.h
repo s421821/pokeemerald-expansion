@@ -4671,3 +4671,51 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Follower = {
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
+
+
+// Added OW sprites
+
+//pokemon
+
+//arcanine
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ArcanineOW = { 
+    .tileTag = 0xFFFF,
+    .paletteTag = OBJ_EVENT_PAL_ARCANINEOW,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 512,
+    .width = 32,
+    .height = 32,
+    .paletteSlot = 0,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    //.disableReflectionPaletteLoad = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_32x32,
+    .subspriteTables = sOamTables_32x32,
+    .anims = sAnimTable_Standard,
+    .images = gObjectEventPicTable_ArcanineOW,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
+
+//people
+
+//rocket grunt
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rocketgrunt = { 
+    .tileTag = 0xFFFF,
+    .paletteTag = OBJ_EVENT_PAL_ROCKETGRUNT,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 512,
+    .width = 32,
+    .height = 32,
+    .paletteSlot = 0,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    //.disableReflectionPaletteLoad = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_32x32,
+    .subspriteTables = sOamTables_32x32,
+    .anims = sAnimTable_Standard,
+    .images = gObjectEventPicTable_Rocketgrunt,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};

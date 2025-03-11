@@ -39,6 +39,30 @@ LittlerootTown_Lab2_Darkrai_2:
 	goto LittlerootTown_Lab2_Darkrai_1
 
 
+LittlerootTown_Lab2_GiveRunningShoes::
+# 32 "data/maps/LittlerootTown_Lab2/scripts.pory"
+	goto_if_unset FLAG_SYS_B_DASH, LittlerootTown_Lab2_GiveRunningShoes_2
+# 42 "data/maps/LittlerootTown_Lab2/scripts.pory"
+	msgbox LittlerootTown_Lab2_GiveRunningShoes_Text_1
+LittlerootTown_Lab2_GiveRunningShoes_1:
+# 44 "data/maps/LittlerootTown_Lab2/scripts.pory"
+	waitmessage
+# 45 "data/maps/LittlerootTown_Lab2/scripts.pory"
+	releaseall
+	end
+
+LittlerootTown_Lab2_GiveRunningShoes_2:
+# 34 "data/maps/LittlerootTown_Lab2/scripts.pory"
+	lockall
+# 35 "data/maps/LittlerootTown_Lab2/scripts.pory"
+	faceplayer
+# 36 "data/maps/LittlerootTown_Lab2/scripts.pory"
+	msgbox LittlerootTown_Lab2_GiveRunningShoes_Text_0
+# 37 "data/maps/LittlerootTown_Lab2/scripts.pory"
+	setflag FLAG_SYS_B_DASH
+	goto LittlerootTown_Lab2_GiveRunningShoes_1
+
+
 LittlerootTown_Lab2_Darkrai_Text_0:
 # 7 "data/maps/LittlerootTown_Lab2/scripts.pory"
 	.string "Do you want Squirtle?$"
@@ -50,3 +74,11 @@ LittlerootTown_Lab2_Darkrai_Text_1:
 LittlerootTown_Lab2_Darkrai_Text_2:
 # 22 "data/maps/LittlerootTown_Lab2/scripts.pory"
 	.string "You didn't pick yes$"
+
+LittlerootTown_Lab2_GiveRunningShoes_Text_0:
+# 36 "data/maps/LittlerootTown_Lab2/scripts.pory"
+	.string "Here's the running shoes$"
+
+LittlerootTown_Lab2_GiveRunningShoes_Text_1:
+# 42 "data/maps/LittlerootTown_Lab2/scripts.pory"
+	.string "Enjoy the shoes$"

@@ -384,6 +384,23 @@ const u16 gObjectEventPal_Substitute[] = INCBIN_U16("graphics/pokemon/question_m
 
 const u16 gObjectEventPaletteEmotes[] = INCBIN_U16("graphics/misc/emotes.gbapal");
 
+//Added OW Sprites
+
+//pokemon
+
+//arcanine
+const u32 gObjectEventPic_ArcanineOW[] = INCBIN_U32("graphics/object_events/pics/people/arcanine.4bpp"); //Points to Arcanine
+const u16 gObjectEventPalette_ArcanineOW[] = INCBIN_U16("graphics/object_events/pics/people/arcanine.gbapal"); //Arcanine gbapal file
+
+//people
+
+//rocket grunt
+const u32 gObjectEventPic_Rocketgrunt[] = INCBIN_U32("graphics/object_events/pics/people/rocket_grunt.4bpp"); 
+const u16 gObjectEventPalette_Rocketgrunt[] = INCBIN_U16("graphics/object_events/pics/people/rocket_grunt.gbapal");
+
+
+
+
 #if OW_FOLLOWERS_POKEBALLS
 const u32 gObjectEventPic_MasterBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_master.4bpp");
 const u32 gObjectEventPic_UltraBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_ultra.4bpp");

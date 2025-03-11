@@ -26,3 +26,22 @@ script LittlerootTown_Lab2_Darkrai
     releaseall
     end 
 }
+
+script LittlerootTown_Lab2_GiveRunningShoes
+{
+    if(flag(FLAG_SYS_B_DASH) == FALSE)
+    {
+        lockall
+        faceplayer
+        msgbox("Here's the running shoes")
+        setflag(FLAG_SYS_B_DASH)
+    }
+
+    else
+    {
+        msgbox("Enjoy the shoes")
+    }
+    waitmessage
+    releaseall
+    end
+}
