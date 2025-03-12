@@ -390,7 +390,7 @@
 #define OBJ_EVENT_PAL_TAG_DYNAMIC                 0x1124
 //added ow sprites
 #define OBJ_EVENT_PAL_ARCANINEOW                  0x1125
-#define OBJ_EVENT_PAL_ROCKETGRUNT                  0x1126
+#define OBJ_EVENT_PAL_ROCKETGRUNT                 0x1126
 
 
 

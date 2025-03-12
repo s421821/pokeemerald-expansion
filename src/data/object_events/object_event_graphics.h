@@ -395,8 +395,8 @@ const u16 gObjectEventPalette_ArcanineOW[] = INCBIN_U16("graphics/object_events/
 //people
 
 //rocket grunt
-const u32 gObjectEventPic_Rocketgrunt[] = INCBIN_U32("graphics/object_events/pics/people/rocket_grunt.4bpp"); 
-const u16 gObjectEventPalette_Rocketgrunt[] = INCBIN_U16("graphics/object_events/pics/people/rocket_grunt.gbapal");
+const u32 gObjectEventPic_Rocketgrunt[] = INCBIN_U32("graphics/object_events/pics/people/rocketgrunt.4bpp"); 
+const u16 gObjectEventPalette_Rocketgrunt[] = INCBIN_U16("graphics/object_events/pics/people/rocketgrunt.gbapal");
 
 
 

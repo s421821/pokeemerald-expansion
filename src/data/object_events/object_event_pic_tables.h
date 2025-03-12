@@ -1378,13 +1378,13 @@ const struct SpriteFrameImage gObjectEventPicTable_ArcanineOW[] = {
 
 //rocket grunt
 const struct SpriteFrameImage gObjectEventPicTable_Rocketgrunt[] = {
-    overworld_frame(gObjectEventPic_Rocketgrunt, 4, 4, 0), //face down
-    overworld_frame(gObjectEventPic_Rocketgrunt, 4, 4, 1), //face up
-    overworld_frame(gObjectEventPic_Rocketgrunt, 4, 4, 2), //face left
-    overworld_frame(gObjectEventPic_Rocketgrunt, 4, 4, 3), //walk down frame 1
-    overworld_frame(gObjectEventPic_Rocketgrunt, 4, 4, 4), //walk down frame 2
-    overworld_frame(gObjectEventPic_Rocketgrunt, 4, 4, 5), //walk up frame 1
-    overworld_frame(gObjectEventPic_Rocketgrunt, 4, 4, 6), //walk up frame 2
-    overworld_frame(gObjectEventPic_Rocketgrunt, 4, 4, 7), //walk left frame 1
-    overworld_frame(gObjectEventPic_Rocketgrunt, 4, 4, 8), //walk left frame 2*/
+    overworld_frame(gObjectEventPic_Rocketgrunt, 2, 4, 0), //face down
+    overworld_frame(gObjectEventPic_Rocketgrunt, 2, 4, 1), //face up
+    overworld_frame(gObjectEventPic_Rocketgrunt, 2, 4, 2), //face left
+    overworld_frame(gObjectEventPic_Rocketgrunt, 2, 4, 3), //walk down frame 1
+    overworld_frame(gObjectEventPic_Rocketgrunt, 2, 4, 4), //walk down frame 2
+    overworld_frame(gObjectEventPic_Rocketgrunt, 2, 4, 5), //walk up frame 1
+    overworld_frame(gObjectEventPic_Rocketgrunt, 2, 4, 6), //walk up frame 2
+    overworld_frame(gObjectEventPic_Rocketgrunt, 2, 4, 7), //walk left frame 1
+    overworld_frame(gObjectEventPic_Rocketgrunt, 2, 4, 8), //walk left frame 2*/
 };

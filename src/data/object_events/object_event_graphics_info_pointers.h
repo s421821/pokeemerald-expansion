@@ -250,6 +250,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvi
 
 //Added OW Sprites
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ArcanineOW;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rocketgrunt;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
