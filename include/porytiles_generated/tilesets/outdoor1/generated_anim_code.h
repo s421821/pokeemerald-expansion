@@ -19,6 +19,11 @@ const u16 gTilesetAnims_PorytilesManaged_Outdoor1_Flower_FrameCenter[] = INCBIN_
 const u16 gTilesetAnims_PorytilesManaged_Outdoor1_Flower_FrameRight[] = INCBIN_U16("data/tilesets/primary/outdoor1/porytiles_bin/anim/flower/right.4bpp");
 const u16 gTilesetAnims_PorytilesManaged_Outdoor1_Flower_FrameLeft[] = INCBIN_U16("data/tilesets/primary/outdoor1/porytiles_bin/anim/flower/left.4bpp");
 
+const u16 gTilesetAnims_PorytilesManaged_Outdoor1_GrayFlower_Frame00[] = INCBIN_U16("data/tilesets/primary/outdoor1/porytiles_bin/anim/gray_flower/00.4bpp");
+const u16 gTilesetAnims_PorytilesManaged_Outdoor1_GrayFlower_Frame01[] = INCBIN_U16("data/tilesets/primary/outdoor1/porytiles_bin/anim/gray_flower/01.4bpp");
+const u16 gTilesetAnims_PorytilesManaged_Outdoor1_GrayFlower_Frame02[] = INCBIN_U16("data/tilesets/primary/outdoor1/porytiles_bin/anim/gray_flower/02.4bpp");
+const u16 gTilesetAnims_PorytilesManaged_Outdoor1_GrayFlower_Frame03[] = INCBIN_U16("data/tilesets/primary/outdoor1/porytiles_bin/anim/gray_flower/03.4bpp");
+
 // ============================================
 // Frame Pointer Arrays
 // ============================================
@@ -28,6 +33,13 @@ const u16 *const gTilesetAnims_PorytilesManaged_Outdoor1_Flower[] = {
     gTilesetAnims_PorytilesManaged_Outdoor1_Flower_FrameRight,
     gTilesetAnims_PorytilesManaged_Outdoor1_Flower_FrameCenter,
     gTilesetAnims_PorytilesManaged_Outdoor1_Flower_FrameLeft
+};
+
+const u16 *const gTilesetAnims_PorytilesManaged_Outdoor1_GrayFlower[] = {
+    gTilesetAnims_PorytilesManaged_Outdoor1_GrayFlower_Frame00,
+    gTilesetAnims_PorytilesManaged_Outdoor1_GrayFlower_Frame01,
+    gTilesetAnims_PorytilesManaged_Outdoor1_GrayFlower_Frame02,
+    gTilesetAnims_PorytilesManaged_Outdoor1_GrayFlower_Frame03
 };
 
 // ============================================
@@ -40,6 +52,12 @@ static void QueueAnimTiles_PorytilesManaged_Outdoor1_Flower(u16 timer)
     AppendTilesetAnimToBuffer(gTilesetAnims_PorytilesManaged_Outdoor1_Flower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(1)), 4 * TILE_SIZE_4BPP);
 }
 
+static void QueueAnimTiles_PorytilesManaged_Outdoor1_GrayFlower(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_PorytilesManaged_Outdoor1_GrayFlower);
+    AppendTilesetAnimToBuffer(gTilesetAnims_PorytilesManaged_Outdoor1_GrayFlower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(5)), 4 * TILE_SIZE_4BPP);
+}
+
 // ============================================
 // Driver Function
 // ============================================
@@ -49,6 +67,7 @@ static void TilesetAnim_PorytilesManaged_Outdoor1(u16 timer)
     if (timer % 16 == 0)
     {
         QueueAnimTiles_PorytilesManaged_Outdoor1_Flower(timer / 16);
+        QueueAnimTiles_PorytilesManaged_Outdoor1_GrayFlower(timer / 16);
     }
 }
 
