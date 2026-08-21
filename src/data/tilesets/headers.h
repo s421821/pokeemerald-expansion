@@ -1552,3 +1552,14 @@ const struct Tileset gTileset_CustomGeneral =
     .metatileAttributes = gMetatileAttributes_CustomGeneral,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Outdoor1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_PorytilesManaged_Outdoor1,
+    .palettes = gTilesetPalettes_PorytilesManaged_Outdoor1,
+    .metatiles = gMetatiles_PorytilesManaged_Outdoor1,
+    .metatileAttributes = gMetatileAttributes_PorytilesManaged_Outdoor1,
+    .callback = InitTilesetAnim_PorytilesManaged_Outdoor1,
+};

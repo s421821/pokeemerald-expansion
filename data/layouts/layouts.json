@@ -9329,7 +9329,7 @@
       "name": "TestMap_Layout",
       "width": 20,
       "height": 20,
-      "primary_tileset": "gTileset_CustomGeneral",
+      "primary_tileset": "gTileset_Outdoor1",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/TestMap/border.bin",
       "blockdata_filepath": "data/layouts/TestMap/map.bin"

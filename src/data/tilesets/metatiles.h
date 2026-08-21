@@ -411,3 +411,6 @@ const u16 gMetatileAttributes_HallOfFame[] = INCBIN_U16("data/tilesets/secondary
 
 const u16 gMetatiles_CustomGeneral[] = INCBIN_U16("data/tilesets/primary/custom_general/metatiles.bin");
 const u16 gMetatileAttributes_CustomGeneral[] = INCBIN_U16("data/tilesets/primary/custom_general/metatile_attributes.bin");
+
+const u16 gMetatiles_PorytilesManaged_Outdoor1[] = INCBIN_U16("data/tilesets/primary/outdoor1/porytiles_bin/metatiles.bin");
+const u16 gMetatileAttributes_PorytilesManaged_Outdoor1[] = INCBIN_U16("data/tilesets/primary/outdoor1/porytiles_bin/metatile_attributes.bin");
